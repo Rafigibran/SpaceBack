@@ -1,0 +1,75 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFFFF"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical"
+		android:layout_weight="1">
+		<ImageView
+			android:id="@+id/imageview1"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:src="@drawable/update"
+			android:scaleType="fitCenter" />
+		<TextView
+			android:id="@+id/textview5"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="Tersedia Versi Terbaru"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:textColor="#424242" />
+		<TextView
+			android:id="@+id/textview6"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="DETAIL"
+			android:textSize="16sp"
+			android:textColor="#424242" />
+		<cjh.WaveProgressBarlibrary.WaveProgressBar
+			android:id="@+id/waveProgressbar"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:layout_marginLeft="25dp"
+			android:layout_marginRight="25dp"
+			android:padding="8dp"
+			android:background="@android:color/transparent"
+			android:indeterminate="false"
+			style="?android:progressBarStyle"
+			app:cavans_bg="#FF424242"
+			app:progress="0"
+			app:shape="circle"
+			app:text_size="20sp" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/linear6"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFF"
+		android:orientation="vertical">
+		<com.google.android.material.button.MaterialButton
+			android:id="@+id/Proses"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="8dp"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="UPDATE"
+			android:textSize="12sp"
+			android:textColor="#FFFFFF"
+			android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+			app:backgroundTint="@color/colorPrimary"
+			app:cornerRadius="8dp"
+			style="@style/Widget.MaterialComponents.Button" />
+	</LinearLayout>
+</LinearLayout>
